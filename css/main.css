@@ -1,0 +1,139 @@
+
+body {
+  background-color: #990000;
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  color: #990000;
+  font-size: 3.5em;
+  text-align: center;
+  padding: 10px;
+}
+h2 {
+  color: rgba(0, 122, 8, 1);
+  font-size: 2em;
+  text-align: center;
+  padding: 10px;
+}
+h3 {
+    color: rgba(0, 122, 8, 1);
+    padding-left: 50px;
+}
+a:link    {color: #000;}
+a:visited {color: #990000; background-color: #333;}
+a:hover   {color: #666;}
+a:active  {color: #000;}
+p {
+    margin: 5%;
+}
+#saying p {
+    text-align: center;
+}
+nav {
+    display: inline;
+    margin: 0 auto;
+}
+ul, {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+}
+ol {
+    list-style-type:circle;
+
+}
+
+li {
+    float: left;
+    list-style: none;
+    padding: .2em 1em;
+
+}
+
+li a {
+    float: left;
+    padding: 5px;
+    background: none;
+    color: #000;
+}
+
+
+div.img {
+    margin-bottom: 50px;
+    padding: 5px;
+    background: none;
+    height: 255px;
+    width: 255px;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border:1px solid #0000ff;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+#nav {
+    width: 500px;
+    height: auto;
+    margin: 0 auto;
+}
+#wrapper {
+    width: 1240px;
+    height: auto;
+    margin: 0 auto;
+    background: #f0fff0;
+    border: 1px solid rgba(0, 122, 8, 1);
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+#about {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: hsla(37, 100%, 73%, 1);
+    border-radius: 25px;
+    box-shadow: 10px 10px 5px #888888;
+}
+#menu {
+    width: 1000px;
+    height: auto;
+    margin: 0 auto;
+    background-color: hsla(37, 100%, 73%, 1);
+    border-radius: 25px;
+}
+#sources {
+    width: 800px;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+a.backLink {
+    width: 100px;
+    height: auto;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+blockquote {
+ border : 1px solid #ffb90f;
+ width: 200px;
+ margin: 0 auto;
+ padding: 10px;
+ background-color: #990000;
+ opacity: .8;
+ quotes: "\201C" "\201D";
+ color: #f0f0f0;
+ }
+ blockquote:before { content: open-quote; font-weight: bold; }
+ blockquote:after { content: close-quote; font-weight: bold; }

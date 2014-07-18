@@ -13,63 +13,16 @@ July 10, 2014
 <head>
     <meta charset="UTF-8" />
     <title>Restorante Italiano</title>
-<style>
-body {
-  background: #f0fff0;
-}
-h1 {
-  color: #990000;
-}
-h2 {
-  color: green;
-}
-
-div.img {
-    margin-bottom: 50px;
-    padding: 5px;
-    background: none;
-    height: 255px;
-    width: 255px;
-    text-align: center;
-}
-
-div.img img {
-    display: inline;
-    margin: 5px;
-    border: 1px solid #ffffff;
-}
-
-div.img a:hover img {
-    border:1px solid #0000ff;
-}
-
-div.desc {
-    text-align: center;
-    font-weight: normal;
-    width: 120px;
-    margin: 5px;
-}
-
-blockquote {
- border : 1px solid #ffb90f;
- width: 200px;
- margin: 0px;
- padding: 10px;
- background-color: #990000;
- quotes: "\201C" "\201D";
- color: #f0f0f0;
- }
- blockquote:before { content: open-quote; font-weight: bold; }
- blockquote:after { content: close-quote; font-weight: bold; }
-</style>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
  
 </head>
 <body>
     
-
+<div id="wrapper">
   <div id="heading"><h1>Restorante Italiano</h1></div>
-    <blockquote>This is a short block quote — look Ma, no paragraph tags!</blockquote>
-
+    <blockquote>Where everyone knows everyone!</blockquote>
+      <div id="nav">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -78,15 +31,15 @@ blockquote {
                 <li><a href="#sources">Sources</a></li>
             </ul>
         </nav>
+      </div><!-- nav -->
 
-
-        <li>Please check out our <a href="#menu">menu</a>. We have a piece of Italy for everyone.</li>
+        <div id="saying"><p>Please check out our <a href="#menu">menu</a>. We have a piece of Italy for everyone.</p></div>
     <div id="about">
       <h2>About Us</h2>
         <h3>The Beginning</h3>
           <p>We are a fine restorante built from the <strong>heart</strong> of Italy itself. Owner Adolfo Abele was born and reared in Florence, Italy till the age 17. His grandmother Elenora Agapito used to cook and serve food in the town square. Elenora's son or Adolfos father Adalberto wanted to Adolfo to stay in the town square and sell bowls of noodles to the people. At 17 yearsof age Adolfo felt like he was missing something in life and decided to become a kungfu ninja. He fought glorious battles and gained the respect of his ninja master Pinkanoob in the great Apennine Mountainss. After Adoflo reached enlightment by age 32, he decided to go back and help his family back in Italy selling noodles. However, on his journey home he had a vision of opening a an Italian Restorante in America.</p>
           <br>
-        <a href="#heading">back to top</a> 
+        <a href="#heading" class="backLink">back to top</a> 
           <br>
 
       <h3>Today</h3>
@@ -97,7 +50,17 @@ blockquote {
 
          <p>They serve a big variety of homemade dishes that you would think your grandmother cooked herself. Nothing is complete without fine wine to wash down the flavors of Florence.</p>
          <br>
-        <a href="#heading">back to top</a> 
+         <p>Here are some dishes we serve:</p>
+         <ol>
+            <li>Spaghetti</li>
+            <li>French Toast</li>
+            <li>Mussels</li>
+         </ol>
+       </br>
+     </br>
+
+         
+        <a href="#heading" class="backLink">back to top</a> 
         <br>
     </div>
 
@@ -125,7 +88,7 @@ blockquote {
             
    </div>
           <br />
-          <a href="#heading">back to top</a> 
+          <a href="#heading" class="backLink">back to top</a> 
           <br />
           <br />
           <br />  
@@ -144,12 +107,12 @@ blockquote {
     </di>
 
         <br>
-        <a href="#heading">back to top</a> 
+        <a href="#heading" class="backLink">back to top</a> 
         <br>
 
             <p>Website built by Stephen Willis</p>
-    </div>
-
+    
+</div><!--wrapper -->
 </body>
 </html>
 
