@@ -58,7 +58,7 @@ ol {
     padding: 8px 15px;
     text-decoration: none;
     font-weight: bold;
-    color: #069;
+    color: rgba(0, 122, 8, 1);
     border-right: 1px solid #ccc; }
 #nav li a:hover {
     color: #c00;
