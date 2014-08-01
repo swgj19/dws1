@@ -3,7 +3,7 @@
 */ 
 body {
   background: url('../images/binding_dark.png') repeat;
-  background-position: middle;
+  background-position: center;
   font-family: 'Lato', sans-serif;
 }
 h1 {
@@ -193,7 +193,7 @@ table {
     border-spacing: 0;
     font-size: normal .9em Arial, sans-serif;
     letter-spacing: .1em;
-    text-align: middle;
+    text-align: left;
 }
 table caption {
     height: 2em;
@@ -217,6 +217,7 @@ table tbody td {
     padding: 10px;
     text-shadow: 1px 1px 1px #fff;
 }
+
 tbody td:hover::after {
     background-color: #CCE7E7;
     content:'\00a0';
