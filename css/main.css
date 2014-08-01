@@ -1,4 +1,6 @@
-
+/* 
+///////////// Main Styling ///////////
+*/ 
 body {
   background: url('../images/binding_dark.png') repeat;
   background-position: middle;
@@ -30,38 +32,37 @@ a:active  {color: #000;}
 p {
     margin: 5%;
 }
-#saying p {
-    text-align: center;
-}
-nav {
-    display: inline;
-    margin: 0 auto;
-}
-ul, {
-    width: 100%;
-    overflow: hidden;
-    text-align: center;
+ul {
+    list-style-type: none;
 }
 ol {
-    list-style-type:circle;
-
+    list-style-type: circle;
 }
 
-li {
-    float: left;
+/* 
+///////////// Navigation ///////////
+*/ 
+#nav {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
     list-style: none;
-    padding: .2em 1em;
-
-}
-
-li a {
-    float: left;
-    padding: 1%;
-    background: none;
-    color: #000;
-}
-
-
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc; }
+#nav li {
+    float: left; }
+#nav li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #069;
+    border-right: 1px solid #ccc; }
+#nav li a:hover {
+    color: #c00;
+    background-color: #fff; }
 div.img {
     margin-bottom: 3%;
     padding: 1%;
@@ -70,31 +71,33 @@ div.img {
     width: 90%;
     text-align: center;
     max-width: 100%;
-
 }
-
 div.img img {
     display: inline;
     margin: 1%;
     border: 1px solid #ffffff;
     max-width: 100%;
 }
-
 div.img a:hover img {
-    border:1px solid #0000ff;
-}
+    border:1px solid #f0fff0;
+    box-shadow: 10px 10px 5px #666666;
 
+}
 div.desc {
-    text-align: center;
-    font-weight: normal;
     width: 120px;
     margin: 5px;
+    text-align: center;
+    font-size: normal .9em Arial, sans-serif;
+    font-style: underline;
+    line-height: 102%;
+    text-shadow: 1em;
+    
 }
-#nav {
-    width: 50%;
-    height: auto;
-    margin: 0 auto;
-}
+
+/* 
+///////////// Content Styling ///////////
+*/ 
+
 #wrapper {
     width: 95%;
     height: auto;
@@ -141,13 +144,27 @@ div.desc {
     margin: 0 auto;
     text-align: center;
 }
+#sources li {
+    float: left;
+    padding: .3em;
+}
+#saying p {
+    text-align: center;
+}
+
 a.backLink {
     width: 5%;
     height: auto;
     margin-left: 5%;
     margin-bottom: 5%;
 }
+#footer {
+    text-align: center;
+}
 
+/* 
+///////////// Blockquote Styling ///////////
+*/ 
 blockquote {
  border : 1px solid #ffb90f;
  width: 200px;
@@ -160,3 +177,120 @@ blockquote {
  }
  blockquote:before { content: open-quote; font-weight: bold; }
  blockquote:after { content: close-quote; font-weight: bold; }
+
+
+
+/* 
+///////////// Table Styling ///////////
+*/ 
+table {
+    width: 80%;
+    padding: 2%;
+    margin: 5%;
+    background-color: #fff;
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-size: normal .9em Arial, sans-serif;
+    letter-spacing: .1em;
+    text-align: middle;
+}
+table caption {
+    height: 2em;
+    font-size: 1.5em;
+    padding: 2%;
+    color: #f0fff0;
+    opacity: .8;
+    background-color: #990000;
+}
+table thead th {
+    background-color: #f1da36;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+table tbody td {
+    border: solid 1px #DDEEEE;
+    color: #333;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #fff;
+}
+tbody td:hover::after {
+    background-color: #CCE7E7;
+    content:'\00a0';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+tbody tr:nth-child(even) {
+   background-color: #ccc;
+}
+tbody tr:hover {
+    background-color: #CCE7E7;
+}    
+tbody tr:nth-child(even) {
+   background-color: #ccc;
+}
+tbody tr:hover {
+    background-color: #CCE7E7;
+}
+
+/* 
+///////////// Form Styling ///////////
+*/  
+form#contact {
+    width: 80%;
+    height: auto;
+    padding: 2%;
+    background-color: #f0fff0;
+    margin: 5%;
+    font-size: 1em;
+    color: #000;
+    border: .3em solid #f0fff0;
+    text-align: left;
+}
+fieldset {
+    width: 80%;
+    margin-top: 20px;
+    border: 1px solid #d6d6d6;
+    background-color: #ffffff;
+    line-height: 1.6em;}
+legend {
+    font-style: italic;
+    color: #990000;
+    font-size: 1.2em;
+}
+input[type="text"] {
+    width: 120px;
+    border: 1px solid #d6d6d6;
+    padding: 2px;
+    outline: none;}
+input[type="text"]:focus,
+input[type="text"]:hover {
+    background-color: #d0e2f0;
+    border: 1px solid #999999;}
+input[type="submit"] {
+    border: 1px solid #006633;
+    background-color: #990000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 10px;}
+input[type="submit"]:hover {
+    border: 1px solid #f0fff0;
+    background-color: #000;
+    color: #ffffff;
+    cursor: pointer;}
+textarea { vertical-align: top; }​
+.title {
+    float: left;
+    width: 160px;
+    clear: left;}
+.submit {
+    width: 310px;
+    text-align: right;}

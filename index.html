@@ -15,105 +15,180 @@ July 10, 2014
     <title>Restorante Italiano</title>
     <link rel="stylesheet" type="text/css" href="css/main.css">
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
- 
+    <script>
+      function scrollWindow()
+            {
+                window.scrollTo(0,0);
+            }
+    </script>
 </head>
-<body>
+<body onLoad="pageScroll()">
     
-<div id="wrapper">
-  <div id="heading"><h1>Restorante Italiano</h1></div>
-    <blockquote>Where everyone knows everyone!</blockquote>
-      <div id="nav">
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#sources">Sources</a></li>
-            </ul>
-        </nav>
-      </div><!-- nav -->
+  <div id="wrapper">
+    <div id="header"><h1>Restorante Italiano</h1>
+      <blockquote>Where everyone knows everyone!</blockquote>
+        <div id="nav">
+          <nav>
+              <ul id="nav">
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#events">Events</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                  
+              </ul>
+          </nav>
+        </div><!-- nav -->
+    </div><!-- header -->
+          <div id="saying"><p>Please check out our <a href="#menu">menu</a>. We have a piece of Italy for everyone.</p></div>
+      <div id="about">
+        <article>
+          <h2>About Us</h2>
+            <h3>The Beginning</h3>
+              <p>We are a fine restorante built from the <strong>heart</strong> of Italy itself. Owner Adolfo Abele was born and reared in Florence, Italy till the age 17. His grandmother Elenora Agapito used to cook and serve food in the town square. Elenora's son or Adolfos father Adalberto wanted to Adolfo to stay in the town square and sell bowls of noodles to the people. At 17 yearsof age Adolfo felt like he was missing something in life and decided to become a kungfu ninja. He fought glorious battles and gained the respect of his ninja master Pinkanoob in the great Apennine Mountainss. After Adoflo reached enlightment by age 32, he decided to go back and help his family back in Italy selling noodles. However, on his journey home he had a vision of opening a an Italian Restorante in America.</p>
+              <br>
+            <a href="#header" class="backLink">back to top</a> 
+              <br>
+        </article>
+        <section>
+        <h3>Today</h3>
 
-        <div id="saying"><p>Please check out our <a href="#menu">menu</a>. We have a piece of Italy for everyone.</p></div>
-    <div id="about">
-      <h2>About Us</h2>
-        <h3>The Beginning</h3>
-          <p>We are a fine restorante built from the <strong>heart</strong> of Italy itself. Owner Adolfo Abele was born and reared in Florence, Italy till the age 17. His grandmother Elenora Agapito used to cook and serve food in the town square. Elenora's son or Adolfos father Adalberto wanted to Adolfo to stay in the town square and sell bowls of noodles to the people. At 17 yearsof age Adolfo felt like he was missing something in life and decided to become a kungfu ninja. He fought glorious battles and gained the respect of his ninja master Pinkanoob in the great Apennine Mountainss. After Adoflo reached enlightment by age 32, he decided to go back and help his family back in Italy selling noodles. However, on his journey home he had a vision of opening a an Italian Restorante in America.</p>
+          <p>Now at 50 and strong, Adolfo welcomes all his friends and family into a piece of Italy in his backyard.</p>
+
+            <blockquote><p>I welcome anyone to come and have a small piece of Italy.<p></blockquote>
+
+          <p>They serve a big variety of homemade dishes that you would think your grandmother cooked herself. Nothing is complete without fine wine to wash down the flavors of Florence.</p>
+           <br>
+          <p>Here are some dishes we serve:</p>
+           <ol>
+              <li>Spaghetti</li>
+              <li>French Toast</li>
+              <li>Mussels</li>
+           </ol>
+          </br>
+          </br>
+          </section>
+          <section id ="events">
+            <p>We also have local bands serenade our guests.</p>
+           <table>
+              <caption>Events</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Bands</th>
+                    <th scope="col">Morning</th>
+                    <th scope="col">Afternoon</th>
+                    <th scope="col">Evening</th>
+                  </tr>
+                </thead>
+                  <tr>
+                    <th scope="row">Morning Stars</th>
+                    <td>8am</td>
+                    <td>12pm</td>
+                    <td>6pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Moon Horn</th>
+                    <td>9:30am</td>
+                    <td>2pm</td>
+                    <td>8pm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Serenity's Gates</th>
+                    <td>11am</td>
+                    <td>3:30pm</td>
+                    <td>9:30pm</td>
+                  </tr>
+            </table>
+
           <br>
-        <a href="#heading" class="backLink">back to top</a> 
           <br>
+          </section>
+      <!-- javascript confirm message -->
+      <form onsubmit="return confirm('Do you really want to submit the form?');" id="contact" action="http://www.google.com">
+        <fieldset>
+          <legend>We need feedback!</legend>
+              <label for="name">What is your name</label>
+                <input type="text" name="name" id="name" required="required"><br />
+              <label for="email">What is your email</label>
+                <input type="text" name="email" id="email" required="required"><br />
+              <label for="rate">Rate the food</label>
+                <input id="not" type="radio" name="not" value="not" checked="checked">
+              <label for="not">Not so good</label>
+                <input id="ok" type="radio" name="ok" value="ok">
+              <label for="ok">OK</label>
+                <input id="great" type="radio" name="great" value="great">
+              <label for="great">Great</label>
+                <input id="outstanding" type="radio" name="outstanding" value="outstanding">
+              <label for="outstanding">Outstanding</label>
+                <br />
+              <label>How you found us</label>
+                 <select id = "myList">
+                   <option name="online" value = "online" checked="checked">Online</option>
+                   <option  name="ads" value = "ads">Ads</option>
+                   <option name="newspapers" value = "newspapers">Newspapers</option>
+                 </select>
+                <br />
+                 Your comments? <textarea name="comment" required="required">Enter text here...</textarea><br />
+        </fieldset>
+              <input type="submit" value="send">
+      </form>
+           
+          <a href="#header" class="backLink">back to top</a> 
+          <br>
+      </div><!-- about -->
 
-      <h3>Today</h3>
+      <div id="menu">
+        <aside>
+          <h2>Our Menu</h2>
+     		     <figure>
+                <div class="img">
+                  <a href="images/6.jpg"><img src="images/6.jpg" alt="Italian Quesadilla" width="250px" height="250px">
+                  <figcaption>Italian Quesadilla</figcaption></a> 
+                </div>
+             </figure>
+             <figure>
+                <div class="img">
+                  <a href="images/5.jpg"><img src="images/5.jpg" alt="Italian Pizza" width="250px" height="250px">
+                  <figcaption>Italian Pizza</figcaption></a>
+                </div>
+             </figure>
+             <figure>
+                <div class="img">
+                  <a href="images/4.jpg"><img src="images/4.jpg" alt="Sun-Dried Tomato Tortellini" width="250px" height="250px">
+                  <figcaption>Sun Dried Tomato Tortellini</figcaption></a>
+                </div>
+             </figure>
+                <a href="#header" class="backLink">back to top</a>
+        </aside>
+     </div><!-- menu -->
+            <br />
+            <br />
+            <br />
+            <br />  
 
-        <p>Now at 50 and strong, Adolfo welcomes all his friends and family into a piece of Italy in his backyard.</p>
+      
+      <div id="sources">
+      <h2>Sources</h2>
+          <ul>
+              <br>
+              <p><li><a href="http://www.eastbaytrainer.com/fitness-blog/heres-my-story-hope-it-motivates-you-east-bay/">East Bay Trainer</a></li></p>
+              <p><li><a href="http://www.valentinopattaya.com/">Valentinopattaya</a></li></p>
+              <p><li><a href="http://longbeachlouie.com/food/ninos-italian-restaurant/">Long Beach Louie</a></li></p>
+              <p><li><a href="http://www.rio.com/restaurants-night-life/italian-food">Rio</a></li></p>
+              <p><li><a href="http://pestos.net/">Pestos</a></li></p>
+              <p><li><a href="http://www.tripadvisor.com/Restaurant_Review-g255100-d2043508-Reviews-Il_Pom_Italian_Federation_Square-Melbourne_Victoria.html">Tripadvisor</a></li></p>
+          </ul>
+      </di><!-- sources -->
 
-          <blockquote><p>I welcome anyone to come and have a small piece of Italy.<p></blockquote>
-
-         <p>They serve a big variety of homemade dishes that you would think your grandmother cooked herself. Nothing is complete without fine wine to wash down the flavors of Florence.</p>
-         <br>
-         <p>Here are some dishes we serve:</p>
-         <ol>
-            <li>Spaghetti</li>
-            <li>French Toast</li>
-            <li>Mussels</li>
-         </ol>
-       </br>
-     </br>
-
+          <br>
+           <!-- Javascript button that also scrolls to the top -->
+          <input class="pos_fixed" type="button" onclick="scrollWindow()" value="Back To Top" /> 
+          <br>
          
-        <a href="#heading" class="backLink">back to top</a> 
-        <br>
+           
+    <div id="footer">
+      <p>Website built by Stephen Willis</p>
     </div>
-
-    <div id="menu">
-      <h2>Our Menu</h2>
- 		<figure>
-          <div class="img">
-              <a href="images/6.jpg"><img src="images/6.jpg" alt="Italian Quesadilla" width="250px" height="250px">
-              	<figcaption>Italian Quesadilla</figcaption></a>
-              
-          </div>
-         </figure>
-         <figure>
-          <div class="img">
-              <a href="images/5.jpg"><img src="images/5.jpg" alt="Italian Pizza" width="250px" height="250px">
-              <figcaption>Italian Pizza</figcaption></a>
-          </div>
-         </figure>
-         <figure>
-          <div class="img">
-              <a href="images/4.jpg"><img src="images/4.jpg" alt="Sun-Dried Tomato Tortellini" width="250px" height="250px">
-              <figcaption>Sun Dried Tomato Tortellini</figcaption></a>
-          </div>
-         </figure>
-            <a href="#heading" class="backLink">back to top</a> 
-   </div>
-          <br />
-          
-          <br />
-          <br />
-          <br />  
-
-    
-    <div id="sources">
-    <h2>Sources</h2>
-        <ol>
-            <br>
-            <p><li><a href="http://www.eastbaytrainer.com/fitness-blog/heres-my-story-hope-it-motivates-you-east-bay/">East Bay Trainer</a></li></p>
-            <p><li><a href="http://www.valentinopattaya.com/">Valentinopattaya</a></li></p>
-            <p><li><a href="http://longbeachlouie.com/food/ninos-italian-restaurant/">Long Beach Louie</a></li></p>
-            <p><li><a href="http://www.rio.com/restaurants-night-life/italian-food">Rio</a></li></p>
-            <p><li><a href="http://pestos.net/">Pestos</a></li></p>
-            <p><li><a href="http://www.tripadvisor.com/Restaurant_Review-g255100-d2043508-Reviews-Il_Pom_Italian_Federation_Square-Melbourne_Victoria.html">Tripadvisor</a></li></p>
-        </ol>
-    </di>
-
-        <br>
-        <a href="#heading" class="backLink">back to top</a> 
-        <br>
-
-            <p>Website built by Stephen Willis</p>
-    
-</div><!--wrapper -->
+  </div><!--wrapper -->
 </body>
 </html>
 
