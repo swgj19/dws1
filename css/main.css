@@ -92,7 +92,7 @@ div.desc {
     font-style: normal;
     font-weight: normal;
     line-height: 102%;
-    text-shadow: 10px;
+    text-shadow: 2px 2px #ff0000;
     
 }
 
