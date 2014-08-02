@@ -89,10 +89,10 @@ div.desc {
     text-align: center;
     font-family: Arial, sans-serif;
     font-size: .9em;
-    font-style: none;
+    font-style: normal;
     font-weight: normal;
     line-height: 102%;
-    text-shadow: 1em;
+    text-shadow: 10px;
     
 }
 
@@ -192,7 +192,10 @@ table {
     border: solid 1px #DDEEEE;
     border-collapse: collapse;
     border-spacing: 0;
-    font-size: normal .9em Arial, sans-serif;
+    font-family: Arial, sans-serif;
+    font-size: .9em;
+    font-style: normal;
+    font-weight: normal;
     letter-spacing: .1em;
     text-align: left;
 }
